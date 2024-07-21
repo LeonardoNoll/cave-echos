@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Document</title>
+</head>
+<body style="background-image: url(src/assets/1317045\ \(1\).png); background-size: cover;">
+    <main class="text-white font-minecraft mx-auto mt-16 w-fit h-fit">
+        <div class="text-center">
+            <h1 class="text-5xl">Cave Echos</h1>
+            <p class="text-2xl italic">for when you need minecraft cave noises to keep you awake</p>
+        </div>
+        <div class="mt-6 text-xl bg-[#252525] p-4 grid grid-cols-2 gap-2">
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" name="volume" min="0" max="10">
+            <label for="frequency">Frequency</label>
+            <input type="range" id="frequency" name="frequency" min="0" max="10">
+            <button class="p-3 bg-green-700 col-span-2 w-fit mx-auto my-auto hover:border-2" id="play">play sound</button>
+        </div>
+    </main>
+    <script src="src/js/audioPlayer.js"></script>
+</body>
+</html>
