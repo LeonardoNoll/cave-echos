@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .minecraft-range {
+        @apply appearance-none bg-green-600 h-2 my-auto cursor-pointer focus:shadow-md;
+    }
+
+    .minecraft-range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 0.5em;
+        height: 1em;
+        background: white;
+    }
+
+    .minecraft-range::-webkit-slider-thumb:hover {
+        box-shadow: 0 0 0 2px #353535; 
+        scale: 1.3;
+    }
+}
