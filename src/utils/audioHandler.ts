@@ -17,6 +17,11 @@ export default class audioHandler {
         return audio;
     }
 
+    addAudio(audio: HTMLAudioElement): HTMLAudioElement {
+        this.audios.push(audio);
+        return audio;
+    }
+
     playRandomSound(): void {
         const randomIndex = Math.floor(Math.random() * this.audios.length);
         const audio = this.audios[randomIndex];
@@ -37,7 +42,9 @@ export default class audioHandler {
         this.volume = volume;
         this.audios.forEach((audio) => {
             audio.volume = volume/10;
+            
         });
+        console.log(this.volume)
     }
 
     setInterval(interval: number): void {
