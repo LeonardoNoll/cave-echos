@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer components {
+  body {
+    @apply bg-[url(./assets/background.png)] bg-cover;
+  }
+  .minecraft-range {
+    @apply appearance-none bg-green-600 rounded-none h-2 my-auto cursor-pointer focus:shadow-md;
+  }
+
+  .minecraft-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0.5em;
+    height: 1em;
+    background: white;
+  }
+
+  .minecraft-range::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 2px #353535;
+    scale: 1.3;
+  }
+}
+
+@theme {
+  --font-minecraft: "Press Start 2P", serif;
+  --font-minecraft-4: "Minecraft", serif;
+  /* colors: { */
+  /*   'minecraft-green': '#4cbb17'; */
+  /*   'minecraft-red': '#d91e18'; */
+  /*   'minecraft-blue': '#1e50d9'; */
+  /*   'minecraft-yellow': '#d9d51e'; */
+  /*   'minecraft-orange': '#d97b1e'; */
+  /*   'minecraft-purple': '#7b1ed9'; */
+  /*   'minecraft-pink': '#d91e7b'; */
+  /*   'minecraft-gray': '#353535'; */
+  /*   'minecraft-black': '#000000'; */
+  /*   'minecraft-white': '#ffffff'; */
+  /* } */
+}
